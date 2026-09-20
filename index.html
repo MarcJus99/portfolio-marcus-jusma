@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Marcus JUSMA, étudiant en droit et développeur web">
+    <title>Marcus JUSMA — Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <a href="#accueil" class="header__logo">
+                <span class="header__logo-mark">MJ</span>
+                <span class="header__logo-text">
+                    <strong>Marcus JUSMA</strong>
+                    <small>Apprenant Web</small>
+                </span>
+            </a>
+
+            <nav class="nav" aria-label="Navigation principale">
+                <ul class="nav__list">
+                    <li><a href="#accueil" class="nav__link">Accueil</a></li>
+                    <li><a href="#apropos" class="nav__link">À propos</a></li>
+                    <li><a href="#competences" class="nav__link">Compétences</a></li>
+                    <li><a href="#projets" class="nav__link">Projets</a></li>
+                    <li><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="nav__burger" aria-label="Ouvrir le menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="accueil" class="hero">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <p class="hero__badge">Profil apprenant — Recherche de projets & échanges</p>
+                    <h1 class="hero__title">Étudiant en Droit &amp; passionné par le développement web</h1>
+                    <p class="hero__text">
+                        Je suis Marcus JUSMA, étudiant et apprenant en développement web.
+                        Je m'intéresse à la création de solutions numériques utiles, au design
+                        d'interface et aux outils technologiques.
+                    </p>
+                    <div class="hero__actions">
+                        <a href="#projets" class="btn btn--primary">Voir mes projets</a>
+                        <a href="#contact" class="btn btn--secondary">Me contacter</a>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <img src="assets/images/photo-profil.jpg"
+     alt="Photo de profil de Marcus JUSMA"
+     width="300" height="375">
+     
+                </div>
+            </div>
+        </section>
+
+        <section id="apropos" class="section section--apropos">
+            <div class="container">
+                <h2 class="section__title">À propos de moi</h2>
+                <p class="section__lead">
+                    Je suis une personne curieuse, engagée et intéressée par le numérique.
+                    Mon apprentissage du développement web me permet de développer progressivement
+                    mes compétences en HTML, CSS, JavaScript, design d'interface et outils.
+                </p>
+
+                <div class="cards">
+                    <article class="card">
+                        <h3>Domaines d'intérêt</h3>
+                        <p>Droit &amp; Numérique, Accessibilité web, Design</p>
+                    </article>
+                    <article class="card">
+                        <h3>Statut d'apprentissage</h3>
+                        <p>Étudiant en droit &amp; Apprenant autodidacte / projets pratiques</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="competences" class="section section--competences">
+            <div class="container">
+                <h2 class="section__title">Mes compétences</h2>
+                <div class="skills">
+                    <article class="skill"><h3>HTML5</h3><p>Structure sémantique.</p></article>
+                    <article class="skill"><h3>CSS3</h3><p>Flexbox et Grid.</p></article>
+                    <article class="skill"><h3>JavaScript</h3><p>Interactions et validation.</p></article>
+                    <article class="skill"><h3>Figma</h3><p>Wireframes et prototypes.</p></article>
+                    <article class="skill"><h3>Power BI</h3><p>Analyse de données.</p></article>
+                    <article class="skill"><h3>Gestion de projet</h3><p>Organisation agile.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projets" class="section section--projets">
+            <div class="container">
+                <h2 class="section__title">Mes projets</h2>
+                <div class="projects">
+                    <article class="project">
+                        <h3>Portfolio personnel</h3>
+                        <p>Site one-page responsive.</p>
+                        <a href="#" class="btn btn--small">Voir le projet</a>
+                    </article>
+                    <article class="project">
+                        <h3>Mini-application</h3>
+                        <p>Interface de suivi de tâches.</p>
+                        <a href="#" class="btn btn--small">Voir le projet</a>
+                    </article>
+                    <article class="project">
+                        <h3>Maquette Figma</h3>
+                        <p>Wireframe et prototype.</p>
+                        <a href="#" class="btn btn--small">Voir le projet</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+    <h2>Me contacter</h2>
+    <p>
+        Vous souhaitez échanger avec moi ou en savoir plus sur mes projets ?
+        N'hésitez pas à me contacter.
+    </p>
+
+    <form id="contactForm" action="https://formspree.io/f/xwlpvlae" method="POST">
+        
+        <div class="form-group">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="votre@email.com">
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Votre message..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Envoyer</button>
+
+        <p id="formMessage"></p>
+    </form>
+</section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <p>© 2026 Marcus JUSMA — Tous droits réservés.</p>
+            <ul class="footer__links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/app.js" defer></script>
+</body>
+</html>
